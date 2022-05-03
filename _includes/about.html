@@ -1,10 +1,6 @@
 <div class="container intro-container">
   <div class="row clearfix">
-    {%- if site.about_title_image -%}
-        <div class="col-xs-12 col-sm-4 col-md-3 no-print">
-          <span class="title-img" style="background-image: url({{ site.about_title_image | relative_url }})"></span>
-        </div>
-    {%- endif -%}
+    <span class="title-img" style="image: url({{ site.about_title_image | relative_url }})"></span>
   </div>
   <h3 id="{{ site.about_title | slugify | default: 'about-me' }}">{{ site.about_title | default:
   "About Me" }}</h3>
