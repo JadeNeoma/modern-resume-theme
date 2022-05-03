@@ -1,4 +1,9 @@
 <div class="container intro-container">
+  {%- if site.about_title_image -%}
+      <div class="col-xs-12 col-sm-4 col-md-3 no-print">
+        <span class="profile-img" style="background-image: url({{ site.about_title_image | relative_url }})"></span>
+      </div>
+    {%- endif -%}
   <h3 id="{{ site.about_title | slugify | default: 'about-me' }}">{{ site.about_title | default:
   "About Me" }}</h3>
   <div class="row clearfix">
